@@ -17,3 +17,14 @@ except HTTPError as e:
 
 except URLError as e:
     print(e.reason)
+
+html = html.decode('utf-8')
+
+
+def trata_html(input):
+    return " ".join(input.split())
+
+
+html = trata_html(html)
+
+print(type(html))
