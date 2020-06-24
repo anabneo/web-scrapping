@@ -27,4 +27,21 @@ def trata_html(input):
 
 html = trata_html(html)
 
-print(type(html))
+soup = BeautifulSoup(html, 'html.parser')
+
+print(type(soup))
+
+print(soup.div.div.div.div.get_text())
+
+print(soup.img)
+
+print(soup.img.attrs)
+
+print(soup.img.attrs.keys())
+
+print(soup.img.attrs.values())
+
+print(soup.img['class'])
+
+print(soup.img.get('src'))
+
